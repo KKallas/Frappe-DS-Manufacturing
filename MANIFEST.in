@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include dsmanufacturing *.css
+recursive-include dsmanufacturing *.csv
+recursive-include dsmanufacturing *.html
+recursive-include dsmanufacturing *.ico
+recursive-include dsmanufacturing *.js
+recursive-include dsmanufacturing *.json
+recursive-include dsmanufacturing *.md
+recursive-include dsmanufacturing *.png
+recursive-include dsmanufacturing *.py
+recursive-include dsmanufacturing *.svg
+recursive-include dsmanufacturing *.txt
+recursive-exclude dsmanufacturing *.pyc
