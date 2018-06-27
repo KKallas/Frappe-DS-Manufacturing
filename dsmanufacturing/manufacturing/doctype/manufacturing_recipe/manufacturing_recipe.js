@@ -68,7 +68,7 @@ frappe.ui.form.on("Manufacturing Recipe", "import", function(frm) {
 
   //create the missing articles on server side
 	function createItems(items) {
-		//var itemsText = JSON.stringify(items);
+		var itemsText = JSON.stringify(items);
 		frappe.call({"method":"dsmanufacturing.manufacturing.doctype.manufacturing_recipe.manufacturing_recipe.createNewItems",
 									"args":{"inputJson":itemsText},
 									"callback": function(r){fillTheTable(items);}
