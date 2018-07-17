@@ -84,7 +84,7 @@ def updateItems(inputJson):
 			replacements = re.split(';\s*',main[2])
 			#split the replacement into mnfr & MPO
 			for i in range(len(replacements)):
-				#skip all the replacements that start with any (these are comments)
+				#skip all the replacements that start with 'any' (these are comments)
 				if re.match('any.*',replacements[i]):
 					replacements[i] = ['',replacements[i]]
 				else:
